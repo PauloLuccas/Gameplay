@@ -7,6 +7,7 @@ import { ButtonAdd } from '../../components/ButtonAdd';
 import { ListHeader } from '../../components/ListHeader';
 import { ListDivider } from '../../components/ListDivider';
 import { Appointments } from '../../components/Appointments';
+import { Background } from '../../../src/components/Background';
 import { CategorySelect } from '../../components/CategorySelect';
 
 export function Home() {
@@ -68,7 +69,7 @@ export function Home() {
     }
 
     return (
-        <View>
+        <Background>
             <View style={styles.header}>
                 <Profile />
                 <ButtonAdd />
@@ -95,9 +96,8 @@ export function Home() {
                         style={styles.matches}
                         showsVerticalScrollIndicator={false}
                     />
-
                 </View>
             </View>
-        </View>
+        </Background>
     )
 }

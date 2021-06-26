@@ -12,11 +12,10 @@ export const styles = StyleSheet.create({
     content: {
         width: 96,
         height: 110,
-        backgroundColor: theme.colors.secondary40,
         borderRadius: 8,
-        justifyContent: 'space-between',
         alignItems: 'center',
-        paddingVertical: 10
+        justifyContent: 'space-between',
+        paddingVertical: 17
     },
     title: {
         fontFamily: theme.fonts.title500,
@@ -24,21 +23,23 @@ export const styles = StyleSheet.create({
         fontSize: 15
     },
     check: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
         width: 8,
         height: 8,
         backgroundColor: theme.colors.secondary100,
-        alignSelf: 'flex-end',
-        marginRight: 7,
         borderBottomColor: theme.colors.secondary50,
         borderWidth: 1,
         borderRadius: 3
     },
     checked: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
         width: 8,
         height: 8,
         backgroundColor: theme.colors.primary,
-        alignSelf: 'flex-end',
-        marginRight: 8,
         borderRadius: 3
     }
 })
