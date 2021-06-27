@@ -14,7 +14,6 @@ type Props = RectButtonProps & {
     checked?: boolean;
 }
 
-
 export function Category({
     title,
     icon: Icon,
@@ -40,8 +39,8 @@ export function Category({
                     />}
 
                     <Icon
-                        width={48}
-                        height={48}
+                        width={42}
+                        height={42}
                     />
 
                     <Text style={styles.title}>
