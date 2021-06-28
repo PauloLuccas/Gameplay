@@ -41,30 +41,6 @@ export function Home() {
             date: '22/06 às 20:40h',
             description: 'É hoje que vamos chegar ao challenger sem perder um partida da md10.'
         },
-        {
-            id: '3',
-            guild: {
-                id: '1',
-                name: 'Lendários',
-                icon: null,
-                owner: true
-            },
-            category: '1',
-            date: '22/06 às 20:40h',
-            description: 'É hoje que vamos chegar ao challenger sem perder um partida da md10.'
-        },
-        {
-            id: '4',
-            guild: {
-                id: '1',
-                name: 'Lendários',
-                icon: null,
-                owner: true
-            },
-            category: '1',
-            date: '22/06 às 20:40h',
-            description: 'É hoje que vamos chegar ao challenger sem perder um partida da md10.'
-        }
     ]
 
     function handleCategorySelect(categoryId: string) {
@@ -96,22 +72,23 @@ export function Home() {
                         title='Partidas agendadas'
                         subtitle='Total 6' 
                     />
-                    
-                    <FlatList 
-                        data={appointments}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) => (
-                            <Appointments
-                                data={item}
-                                onPress={handleAppointmentsDetails}
-                            />
-                        )}
-                        ItemSeparatorComponent={() => <ListDivider />}
-                        style={styles.matches}
-                        showsVerticalScrollIndicator={false}
-                    />
                 </View>
             </View>
+
+            <FlatList 
+                data={appointments}
+                keyExtractor={item => item.id}
+                renderItem={({ item }) => (
+                    <Appointments
+                        data={item}
+                        onPress={handleAppointmentsDetails}
+                    />
+                )}
+                ItemSeparatorComponent={() => <ListDivider />}
+                style={styles.matches}
+                contentContainerStyle={{ paddingBottom: 69 }}
+                showsVerticalScrollIndicator={false}
+            />
         </Background>
     )
 }

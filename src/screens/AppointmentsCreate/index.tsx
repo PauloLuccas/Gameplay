@@ -26,9 +26,17 @@ export function AppointmentsCreate() {
     setOpenGuildsModal(true);
   }
 
+  function handleCloseGuilds() {
+    setOpenGuildsModal(false);
+  }
+
   function handleGuildSelect(guildSelect: GuildProps) {
       setGuild(guildSelect)
       setOpenGuildsModal(false);
+  }
+
+  function handleCategorySelect(categoryId: string) {
+      categoryId === category ? setCategory('') : setCategory(categoryId)
   }
 
   return (
@@ -77,7 +85,7 @@ export function AppointmentsCreate() {
 
                     <View style={styles.field}>
                         <View>
-                            <Text style={styles.label}>
+                            <Text style={[styles.label, {marginBottom: 12, fontSize: 16}]}>
                                 Dia e mês
                             </Text>
 
@@ -91,7 +99,7 @@ export function AppointmentsCreate() {
                         </View>
 
                         <View>
-                            <Text style={styles.label}>
+                            <Text style={[styles.label, {marginBottom: 12, fontSize: 16}]}>
                                 Hora e minuto
                             </Text>
 
@@ -106,7 +114,7 @@ export function AppointmentsCreate() {
                     </View>
 
                     <View style={[styles.field, { marginBottom: 12 }]}>
-                        <Text style={styles.label}>
+                        <Text style={[styles.label, { fontSize: 16 }]}>
                             Descrição
                         </Text>
 
@@ -130,7 +138,7 @@ export function AppointmentsCreate() {
             </Background>
         </ScrollView>
         
-        <ModalView visible={openGuildsModal}>
+        <ModalView visible={openGuildsModal} closeModal={handleCloseGuilds}>
             <Guilds handleGuildSelect={handleGuildSelect}/>
         </ModalView>
 
