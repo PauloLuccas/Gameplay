@@ -10,17 +10,17 @@ export const styles = StyleSheet.create({
     },
     greeting: {
         fontFamily: theme.fonts.title500,
-        fontSize: 20,
+        fontSize: 24,
         color: theme.colors.heading,
-        marginRight: 5
+        marginRight: 6
     },
     username: {
         fontFamily: theme.fonts.title700,
-        fontSize: 20,
+        fontSize: 24,
         color: theme.colors.heading
     },
     message: {
-        fontSize: 12,
+        fontSize: 13,
         fontFamily: theme.fonts.text400,
         color: theme.colors.highlight
     }

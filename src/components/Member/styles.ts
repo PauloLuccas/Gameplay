@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     nameStatus: {
         fontFamily: theme.fonts.text400,
         color: theme.colors.highlight,
-        fontSize: 12
+        fontSize: 13
     },
     status: {
         flexDirection: 'row',
@@ -25,6 +25,6 @@ export const styles = StyleSheet.create({
         width: 8,
         height: 8,
         borderRadius: 4,
-        marginRight: 6
+        marginRight: 9
     }
 });

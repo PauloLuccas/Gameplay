@@ -51,7 +51,7 @@ export function AppointmentsCreate() {
                     title='Agendar Partida'
                 />
 
-                <Text style={[styles.label, { marginLeft: 24, marginTop: 18, marginBottom: 18 }]}>
+                <Text style={[styles.label, { marginLeft: 24, marginTop: 36, marginBottom: 18 }]}>
                     Categoria
                 </Text>
 
@@ -85,7 +85,7 @@ export function AppointmentsCreate() {
 
                     <View style={styles.field}>
                         <View>
-                            <Text style={[styles.label, {marginBottom: 12, fontSize: 16}]}>
+                            <Text style={[styles.label, {marginBottom: 12}]}>
                                 Dia e mês
                             </Text>
 
@@ -99,7 +99,7 @@ export function AppointmentsCreate() {
                         </View>
 
                         <View>
-                            <Text style={[styles.label, {marginBottom: 12, fontSize: 16}]}>
+                            <Text style={[styles.label, {marginBottom: 12}]}>
                                 Hora e minuto
                             </Text>
 

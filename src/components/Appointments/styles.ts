@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     date: {
         fontFamily: theme.fonts.text500,
         color: theme.colors.heading,
-        fontSize: 12,
+        fontSize: 13,
         marginLeft: 7
     },
     player: {
