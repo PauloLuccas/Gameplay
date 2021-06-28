@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="GamePlay" height="80" title="Plant Manager" src=".github/logo.png" />
+  Gameplay
 </h1>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 
-![cover](.github/cover.png?style=flat)
+![cover](https://github.com/PauloLuccas/Gameplay/blob/65725d8b12d760e257967ba3efb05a0c5b529e63/assets/cover.png)
 
 
 ## 💻 Projeto
